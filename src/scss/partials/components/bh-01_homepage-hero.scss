@@ -1,0 +1,152 @@
+.bh-01 {
+    position: relative;
+    &__container {
+        position: relative;
+        height: rem(549);
+        min-height: rem(550);
+        width: 100%;
+        overflow: hidden;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: rem(50);
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        &-content {
+            position: relative;
+            padding-top: rem(20);
+            padding-right: rem(15);
+            padding-left: rem(15);
+            z-index: 1;
+            h1 {
+                margin: rem(20) 0 rem(30) 0;
+                text-align: center;
+                @include media-breakpoint-up(md) {
+                    text-align: left;
+                    margin: rem(25) 0 rem(30) 0;
+                    max-width: rem(535);
+                }
+                @include media-breakpoint-up(lg) {
+                    margin: rem(30) 0 rem(42) 0;
+                    max-width: rem(735);
+                }
+                @include media-breakpoint-up(fullscreen) {
+                    margin: rem(30) 0 rem(30) 0;
+                    max-width: rem(735);
+                }
+            }
+            .eyebrow {
+                display: block;
+                text-align: center;
+                padding-bottom: rem(15);
+                @include media-breakpoint-up(md) {
+                    text-align: left;
+                    padding-bottom: rem(0);
+                }        
+            }
+            .cta-container {
+                justify-content: center;
+                padding-bottom: rem(10);
+                @include media-breakpoint-up(md) {
+                    justify-content: flex-start;
+                    padding-bottom: rem(10);
+                }
+            }
+            @include media-breakpoint-up(md) {
+                padding-top: rem(0);
+            }
+            @include media-breakpoint-up(lg) {
+                padding-top: rem(100);
+            }
+            @include media-breakpoint-up(fullscreen) {
+                padding-top: rem(50);
+            }
+        }
+        @include media-breakpoint-up(md) {
+            height: rem(719);
+            min-height: rem(720);
+            padding-top: rem(0);
+        }
+        @include media-breakpoint-up(lg) {
+            height: rem(699);
+            min-height: rem(700);
+        }
+        @include media-breakpoint-up(fullscreen) {
+            height: rem(939);
+            min-height: rem(940);
+        }
+
+        // override category
+        .category__hero & {
+            min-height: rem(450);
+            height: rem(450);
+            .bh-01__container-content { 
+                padding-top: rem(20);
+                min-height: rem(450);
+                padding-right: rem(15);
+                padding-left: rem(15);
+                h1 { 
+                    font-size: 46px;
+                    letter-spacing: -1.6px;
+                    line-height: 1.06;
+                    @include media-breakpoint-up(md) {
+                        font-size: 60px;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        
+                        font-size: 64px;
+                    }
+                    @include media-breakpoint-up(fullscreen) {
+                        font-size: 76px;
+                        line-height: 82px;
+                        letter-spacing: -2px;
+                    }
+                }
+                @include media-breakpoint-up(md) {
+                    padding-top: rem(40);
+                    min-height: rem(600);
+                }
+                @include media-breakpoint-up(lg) {  
+                    padding-top: rem(80);
+                    padding-right: rem(30);
+                    padding-left: rem(30);
+                }
+            }
+            @include media-breakpoint-up(md) {
+                min-height: rem(600);
+            }
+        }
+    }
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        max-width: 1500px;
+        z-index: 0;
+        transform: translateX(-50%) translateY(-50%);
+        &--desktop {
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
+        }
+        &--mobile {
+            @include media-breakpoint-up(md) {
+                display: none;
+            }          
+        }
+    }
+}

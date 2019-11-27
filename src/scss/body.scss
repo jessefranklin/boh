@@ -1,0 +1,59 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+@media (min-width: 1440px) {
+  .branch-finder .row.parent-container {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  color: $grey;
+}
+
+h1 {
+  margin-bottom: 5px;
+  letter-spacing: -0.8px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+}
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h5 {
+  margin: 0px;
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: .4px;
+}
+
+address {
+  line-height: 1.5;
+}
+
+.textOrange {
+  color: $orange;
+}

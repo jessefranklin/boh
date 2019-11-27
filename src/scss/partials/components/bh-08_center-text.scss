@@ -1,0 +1,81 @@
+.bh-08 {
+    margin-top: rem(0);
+    margin-bottom: rem(0);
+
+    &__container {
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+        padding-right: rem(35);
+        padding-left: rem(35);
+
+        .text-center {
+            text-align: center;
+        }
+        .eyebrow {
+            margin-top: rem(35);
+            margin-bottom: rem(35);
+        }
+        &-title {
+            margin-top: rem(0);
+            margin-bottom: rem(30);
+            @include media-breakpoint-up(md) {
+                margin-bottom: rem(30);
+            }
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(40);
+            }
+        }
+        p {
+            opacity: $copy-opacity;
+            &:last-of-type {
+                margin-bottom: rem(0);
+            }
+        }
+
+        .icon-wrap {
+            font-size: rem(18);
+            font-weight: 500;
+            display: inline-block;
+            padding: rem(0) rem(0);
+            margin-top: 0;
+            white-space: pre;
+            .icon {
+                font-size: 11px;
+                padding-right: rem(4);
+                &:before {
+                    font-weight: 800;
+                }
+            }
+            > span {
+                display: inline;
+            }
+            @include media-breakpoint-up(md) {
+                padding: rem(0) rem(10);
+                display: inline;
+            }
+        }
+        
+        .btn {
+            margin: rem(15) rem(10) rem(0);
+            @include media-breakpoint-up(md) {
+                margin-top: rem(13);
+            }
+            @include media-breakpoint-up(lg) {
+                margin-top: rem(22);
+            }
+        }
+        @include media-breakpoint-up(md) {
+            padding-top: rem(40);
+            padding-bottom: rem(40);
+        }
+        @include media-breakpoint-up(lg) {
+            padding-top: rem(60);
+            padding-bottom: rem(60);
+        }
+    }
+    @include media-breakpoint-up(md) {
+        margin-top: rem(0);
+        margin-bottom: rem(0);       
+    }
+
+}

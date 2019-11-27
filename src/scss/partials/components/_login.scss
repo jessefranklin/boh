@@ -1,0 +1,252 @@
+.lity {
+    z-index: 9999999999;
+}
+
+.lity-close.btn-close-lity {
+    color: $dark-blue;
+    top: rem(5);
+    right: rem(3);
+    text-shadow: none;
+    font-weight: 200;
+    &:hover, &:active, &:focus {
+        color: $dark-blue;
+        font-weight: 200;
+        top: rem(5);
+        text-shadow: none;
+        right: rem(3);
+    }
+    &:before {
+        font-size: 22px;
+        font-weight: 100;
+    }
+    @include media-breakpoint-up(xxl) {
+        top: rem(40);
+        right: rem(40);
+        &:hover, &:active, &:focus {
+            top: rem(40);
+            right: rem(40);
+        }
+    }   
+}
+
+@media all and (-ms-high-contrast:none) {
+    .login-modal-container.lity {
+        display: block;
+        .login-modal {top: -10px; bottom: -10px; position: relative;}
+    }
+}
+
+.login-modal {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 0;
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            border-left: 1px solid $table-border;
+            left: 50%;
+        }
+    }
+    .reverse-order {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__form-container {
+        padding-top: 130px;
+        @include media-breakpoint-up(sm) {
+            padding: 130px 15% 0 !important;
+        }
+        @include media-breakpoint-up(lg) {
+            padding: 0 4% 0 8% !important;
+        }
+    }
+
+    &__container {
+        max-width: 100%;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            width: 90%;
+        }
+        @include media-breakpoint-up(xxl) {
+            width: 1380px;
+        }
+        margin: 0 auto;
+        height: auto;
+        padding: 0 40px;
+        margin-bottom: 5.625rem;
+    }
+
+    &__form {
+        display: block;
+        margin-bottom: 40px;
+        @include media-breakpoint-up(sm) {
+            width: 60%;
+        }
+        @include media-breakpoint-up(md) {
+            width: 60%;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 80%;
+        }
+        @include media-breakpoint-up(xl) {
+            width: 70%;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label-group {
+            label {
+                left: 5px;
+                @include media-breakpoint-up(lg) {
+                    left: 0px;
+                }
+            }
+        }
+        button,
+        input[type="submit"] {
+            margin-top: 20px;
+            border-color: $light-blue;
+            cursor: pointer;
+        }
+    }
+
+    &__links {
+        margin-top: 130px;
+        border-top: 1px solid $table-border;
+        padding-top: 110px;
+        @include media-breakpoint-up(sm) {
+            padding: 110px 15% 0 !important;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-top: 0px;
+            border-top: none;
+            padding-top: 0px;
+            padding: 0px 15px 0 !important;
+        }
+
+        .row {
+            margin-right: 0px;
+            margin-left: -10px;
+            @include media-breakpoint-up(xxl) {
+                .col-sm-6{
+
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    &__signup {
+        margin-top: 12px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 60px;
+            > div {
+                margin-bottom: 7px;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.19;
+        letter-spacing: -0.8px;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: -0.2px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 25px;
+        }
+    }
+
+    select {
+        @extend .base-input;
+        @extend .boh-select;
+        border-radius: 30px;
+        padding: 10px 25px 10px;
+        height: 50px;
+        background-position: 95% 23px;
+        background-size: 20px;
+        border-color: $grey;
+        color: $grey;
+    }
+    input[type="text"],
+    input[type="number"] {
+        @extend .base-input;
+        padding: 16px 20px 5px 25px;
+        border-radius: 30px;
+        height: 50px;
+    }
+    button,
+    input[type="submit"] {
+        background-color: $light-blue;
+    }
+
+    .site-footer__help {
+        padding: 50px 30px;
+        .footer-container {
+            margin: 0 -30px;
+            padding-right: 0;
+            @include media-breakpoint-up(sm) {
+                margin: 0 -5px;
+                padding: 0px 15% 0 !important;
+            }
+            a {
+
+                &.tel {
+                    text-decoration: underline;
+                }
+            }
+            .legal {
+                a {
+                    color: $grey;
+                }
+            }
+        }
+    }
+
+    .form-label-group {
+        + label {
+            left: 0;
+        }
+    }
+
+    a {
+        color: $light-blue;
+    }
+
+    ul {
+        list-style:none;
+        padding: 0px;
+        li {
+            margin-bottom: 5px;
+            a {
+                @extend .link-arrow;
+                font-weight: 500;
+                line-height: 1.25;
+                text-decoration: none;
+                color: $light-blue;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

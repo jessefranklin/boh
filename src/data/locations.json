@@ -1,0 +1,538 @@
+[
+  {
+    "address": {
+      "zip": "33147",
+      "address1": "3200 Nw 79th Street",
+      "address2": "Suite 2",
+      "city": "Honolulu",
+      "state": "HI",
+      "country": "US"
+    },
+    "id": 2308,
+    "displayName": "Bank of Hawaii",
+    "phone": "305-913-8439",
+    "type": ["ATM"],
+    "meta": {
+      "atms": ["Cardless cash", "Accepts Deposits"],
+      "branches": ["Notary Service", "Safe Deposit Box"],
+      "specialty": ["Private Banking Offices", "Residential Loan Offices"]
+    },
+    "geocode": {
+      "latitude": 21.296253,
+      "longitude": -157.845934
+    },
+    "operationalHours": {
+      "open24Hours": null,
+      "hours": {
+        "monday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "friday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      "notification": {
+        "dateTime": "Timestamp",
+        "message": "String"
+      },
+      "exceptions": [
+        {
+          "dateTime": "Timestamp",
+          "closed": true,
+          "open": null,
+          "close": null,
+          "message": "Merry Xmas"
+        },
+        {
+          "dateTime": "Timestamp",
+          "closed": true,
+          "open": null,
+          "close": null,
+          "message": null
+        },
+        {
+          "dateTime": "Timestamp",
+          "closed": false,
+          "open": "12:00",
+          "close": "14:00",
+          "message": "New years eve"
+        }
+      ]
+    }
+  },
+  {
+    "address": {
+      "zip": "33147",
+      "address1": "3200 Nw 79th Street",
+      "address2": "Suite 2",
+      "city": "Honolulu",
+      "state": "HI",
+      "country": "US"
+    },
+    "id": 2309,
+    "displayName": "Bank of Hawaii",
+    "phone": "305-913-8439",
+    "type": ["ATM", "Branch"],
+    "meta": {
+      "atms": ["Easy Deposit", "Drive through", "Accepts Deposits"],
+      "branches": ["Weekend Hours"],
+      "specialty": ["Private Banking Offices", "Residential Loan Offices"]
+    },
+    "geocode": {
+      "latitude": 21.396253,
+      "longitude": -157.845934
+    },
+    "operationalHours": {
+      "open24Hours": true,
+      "hours": {
+        "monday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "friday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      "exceptions": {}
+    }
+  },
+  {
+    "address": {
+      "zip": "33147",
+      "address1": "3200 Nw 79th Street",
+      "address2": "Suite 2",
+      "city": "Honolulu",
+      "state": "HI",
+      "country": "US"
+    },
+    "id": 2312,
+    "displayName": "Bank of Hawaii",
+    "phone": "305-913-8439",
+    "type": ["Branch"],
+    "meta": {
+      "atms": ["Cardless cash", "Accepts Deposits"],
+      "branches": ["Safe Deposit Box", "Weekend Hours"],
+      "specialty": [
+        "Residential Loan Offices",
+        "Commercial Banking Centers",
+        "International Banking Centers",
+        "Business Banking Centers"
+      ]
+    },
+    "geocode": {
+      "latitude": 21.3,
+      "longitude": -157.8
+    },
+    "operationalHours": {
+      "open24Hours": null,
+      "hours": {
+        "monday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "friday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      "exceptions": {}
+    }
+  },
+  {
+    "address": {
+      "zip": "33147",
+      "address1": "3200 Nw 79th Street",
+      "address2": "Suite 2",
+      "city": "Honolulu",
+      "state": "HI",
+      "country": "US"
+    },
+    "id": 2313,
+    "displayName": "Bank of H",
+    "phone": "305-913-8439",
+    "type": ["Branch"],
+    "meta": {
+      "atms": ["Cardless cash", "Drive through", "Accepts Deposits"],
+      "branches": ["Weekend Hours"],
+      "specialty": [
+        "Residential Loan Offices",
+        "Commercial Banking Centers",
+        "International Banking Centers",
+        "Business Banking Centers"
+      ]
+    },
+    "geocode": {
+      "latitude": 21.35,
+      "longitude": -157.8
+    },
+    "operationalHours": {
+      "open24Hours": null,
+      "hours": {
+        "monday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "friday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      "exceptions": {}
+    }
+  },
+  {
+    "address": {
+      "zip": "33147",
+      "address1": "3200 Nw 79th Street",
+      "address2": "Suite 2",
+      "city": "Honolulu",
+      "state": "HI",
+      "country": "US"
+    },
+    "id": 2311,
+    "displayName": "Bank of",
+    "phone": "305-913-8439",
+    "type": ["Branch"],
+    "meta": {
+      "atms": ["Cardless cash", "Accepts Deposits"],
+      "branches": ["Weekend Hours"],
+      "specialty": [
+        "Residential Loan Offices",
+        "Commercial Banking Centers",
+        "International Banking Centers",
+        "Business Banking Centers"
+      ]
+    },
+    "geocode": {
+      "latitude": 21.3,
+      "longitude": -157.9
+    },
+    "operationalHours": {
+      "open24Hours": null,
+      "hours": {
+        "monday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "tuesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "wednesday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "thursday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "friday": [
+          {
+            "open": "04:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "saturday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ],
+        "sunday": [
+          {
+            "open": "07:00",
+            "close": "11:00"
+          },
+          {
+            "open": "13:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      "exceptions": {}
+    }
+  }
+]

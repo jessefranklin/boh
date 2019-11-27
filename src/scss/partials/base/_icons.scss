@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "boh-icons";
+    src: url('../../assets/fonts/icons/boh-icons.eot');
+    src: url('../../assets/fonts/icons/boh-icons.eot?#iefix') format('eot'),
+        url('../../assets/fonts/icons/boh-icons.woff2') format('woff2'),
+        url('../../assets/fonts/icons/boh-icons.woff') format('woff'),
+        url('../../assets/fonts/icons/boh-icons.ttf') format('truetype'),
+        url('../../assets/fonts/icons/boh-icons.svg#boh-icons') format('svg');
+}
+
+@mixin icon-styles {
+    font-family: "boh-icons";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+}
+
+[class*="icon-"]{
+    &:before{
+        font-family: "boh-icons";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        padding-right: 5px;
+    }
+}
+
+%icon {
+    @include icon-styles;
+}
+
+@function icon-char($filename) {
+    $char: "";
+
+    @if $filename == 360 {
+        $char: "\E001";
+    }
+    @if $filename == arrow-thick-right {
+        $char: "\E002";
+    }
+    @if $filename == check {
+        $char: "\E003";
+    }
+    @if $filename == chevron-right {
+        $char: "\E004";
+    }
+    @if $filename == map-pin-2 {
+        $char: "\E005";
+    }
+    @if $filename == map-pin {
+        $char: "\E006";
+    }
+    @if $filename == map {
+        $char: "\E007";
+    }
+    @if $filename == s-filter-2 {
+        $char: "\E008";
+    }
+
+    @return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+    &:#{$insert} {
+        @if $extend {
+            @extend %icon;
+        } @else {
+            @include icon-styles;
+        }
+        content: icon-char($filename);
+    }
+}
+
+.icon-360 {
+    @include icon(360);
+}
+.icon-arrow-thick-right {
+    @include icon(arrow-thick-right);
+}
+.icon-check {
+    @include icon(check);
+}
+.icon-chevron-right {
+    @include icon(chevron-right);
+}
+.icon-map-pin-2 {
+    @include icon(map-pin-2);
+}
+.icon-map-pin {
+    @include icon(map-pin);
+}
+.icon-map {
+    @include icon(map);
+}
+.icon-s-filter-2 {
+    @include icon(s-filter-2);
+}

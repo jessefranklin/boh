@@ -1,0 +1,228 @@
+.articles {
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    &__header {
+        text-align: center;
+        padding-top: 140px;
+        .eyebrow {
+            text-transform: uppercase;
+        } 
+        h1 {
+            font-size: 46px;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: -1.2px;
+            color: $grey;
+            margin: 30px 0;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            opacity: 0.8;
+            color: $grey;
+            margin: 0 0 40px;
+            &.date-stamp {
+                font-size: 12px;
+                font-weight: normal;
+                line-height: 1.17;
+            }
+        }
+    }
+    &__content {
+        color: $grey; 
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.19;
+            letter-spacing: -0.8px;
+        }
+        .article__carousel {
+            max-width: 100%; 
+        }
+        .link-arrow::after {
+            margin-top: 5px;
+            background-position: 3px 5px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.67;
+            letter-spacing: -0.2px;
+            opacity: 0.8;
+            margin: 0;
+            padding:30px 0 30px;
+            &.no-tp {
+                padding-top: 0;
+            }
+        }
+        blockquote {
+            margin: 0;
+            padding: 30px 0 30px;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: -0.8px;
+            p {
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: -0.8px;
+                margin: 0px;
+                padding: 0px;
+            }
+            small {
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: -0.1px;
+                opacity: 0.8;
+                display: block;
+                margin-top: 30px;
+            }
+        }
+        ul {
+            margin: 0px;
+            padding: 30px 0 30px 26px;
+            li {
+                font-size: 20px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: -0.2px;
+                margin-bottom: 40px;
+                padding-left: 10px;
+            }
+        }
+
+        .sp-40 {
+            p {
+                padding: 20px 0 20px;
+            }
+            blockquote {
+                padding: 20px 0 20px;
+            }
+            ul {
+                margin: 0px;
+                padding: 20px 0 20px 26px;
+            }
+        }
+        a {
+            &.link-arrow {
+                font-size: 16px;
+                color: $light-blue;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__categories {
+        text-align: center;
+        padding-top: 40px;
+        .eyebrow {
+            text-transform: none;
+            margin-bottom: 15px;
+            opacity: 0.8;
+            letter-spacing: normal;
+        }
+        ul {
+            list-style: none;
+            margin: 0px 0 40px;
+            padding: 0px;
+            li {
+                display: inline-block;
+                margin-left: 15px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $light-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    // Reusing of bh-04 video carousel overriding styles to align with article designs
+    .bh-04 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include media-breakpoint-down(md) {
+            padding-left: 0px;
+        }
+    }
+
+    .article__carousel {
+        @extend .col-md-8;
+        margin: 0 auto;
+        padding-left:0;
+        padding-right: 0px;
+        .bh-04__container {
+            padding: 0px;
+            .swiper-container .swiper-wrapper .swiper-slide {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-right: 0px;
+                .bh-04__item {
+                    height: auto;
+                    .bh-04__item {
+                        padding-bottom: 60%;
+                    }
+                }
+                .bh-04__item-ftr {
+                    .navigate {
+                        top: 30px;
+                        .swiper-button-prev,
+                        .swiper-button-next {
+                            margin-left: 10px;
+                            svg {
+                                fill: $grey; 
+                                height: 10px;
+                            }
+                        }
+                    }
+                    
+                    .desc {
+                        padding-top: 20px;
+                        font-size: 12px;
+                        span, span:first-of-type {
+                            font-size: 12px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .row > .col, .row > [class*="col-"] {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .bh-04__container {
+            padding-left: 0px;
+        }
+        .bh-04__container .swiper-container .swiper-wrapper .swiper-slide:last-of-type {
+            margin-right: 0;
+            max-width: 100% !important;
+        }
+    }
+    .bh-04__container .swiper-container .swiper-wrapper .swiper-slide .bh-04__item-img {
+        background-size: cover;
+    }
+    .bh-04__container .swiper-container .swiper-wrapper .swiper-slide .bh-04__item {
+        border-radius: 5px;
+        @include media-breakpoint-down(md) {
+            border-radius: 0px;
+        }
+    }
+    .bh-04__container .swiper-container .swiper-wrapper .swiper-slide .bh-04__item-ftr {
+        padding-top: 0px;
+    }
+}

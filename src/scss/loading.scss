@@ -1,0 +1,49 @@
+.sb-container {
+  .results-list-container li {
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
+  }
+}
+
+.isLoading {
+  .map-container {
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .sb-container {
+    .results-list-container {
+      @include media-breakpoint-down(lg) {
+        position: absolute;
+      }
+      li {
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+      }
+    }
+  }
+  .results-list-container,
+  .filters-active,
+  .search-form-inner-container {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      @include media-breakpoint-up(lg) {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}

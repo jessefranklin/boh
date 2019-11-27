@@ -1,0 +1,44 @@
+.container,
+.row {
+  height: 100%;
+}
+
+.fixed-right {
+  position: fixed;
+  right: 0;
+  @include media-breakpoint-up(lg) {
+    z-index: 99;
+  }
+}
+
+.flex {
+  flex: 1;
+}
+
+.row .no-padding {
+  padding: 0px;
+}
+
+.parent-container {
+  margin: 0px;
+}
+
+.sb-container {
+  padding-right: 0px !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-br {
+  vertical-align: bottom;
+  align-self: flex-end;
+}
+
+.flex-end {
+  justify-content: space-between;
+}
+
+

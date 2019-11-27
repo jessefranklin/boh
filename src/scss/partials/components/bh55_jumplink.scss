@@ -1,0 +1,18 @@
+.bh-55 {
+  padding-top: rem(14);
+  .text-content {
+    margin-right: 3%;
+  }
+  ul {
+    display: flex;
+    padding: 0px;
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 5%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: rem(24);
+  }
+}

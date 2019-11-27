@@ -1,0 +1,104 @@
+//TODO: Override the bulk of this
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/**
+* Accordion container element
+*/
+.accordion {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion > li {
+    margin: 0;
+}
+
+/**
+* Accordion Heading
+*/
+.accordion__heading {
+    font-size: inherit;
+    margin: -1px 0 0;
+    margin-top: rem(43);
+}
+
+.accordion__trigger {
+    -webkit-appearance: none !important;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    margin: 0;
+    padding: 1px 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 15px;
+}
+
+.accordion__trigger[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+}
+
+.accordion__trigger:hover,
+.accordion__trigger:focus {
+    background-color: none;
+    outline: none;
+}
+
+.accordion__trigger[aria-disabled="true"]:hover {
+    cursor: not-allowed;
+}
+
+.accordion__panel {
+    background-color: inherit;
+    max-height: 0vh;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    visibility: hidden;
+    z-index: 1;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            padding:0;
+            margin-bottom: rem(12);
+            a {
+                text-decoration: none;
+                // color: #fff;
+                font-family: $font-subheading;
+                font-size: 16px;
+            }
+
+        }
+    }
+}
+
+.accordion__panel--transition {
+    transition:
+        max-height .2s ease-in-out,
+        padding-top .2s ease-in-out,
+        padding-bottom .2s ease-in-out;
+}
+
+.accordion__panel > :last-child {
+    margin-bottom: 0;
+}
+
+.accordion__panel[aria-hidden="false"] {
+    max-height: 200vh;
+    overflow: auto;
+    visibility: visible;
+}

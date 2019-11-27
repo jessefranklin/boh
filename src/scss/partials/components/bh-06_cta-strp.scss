@@ -1,0 +1,58 @@
+.bh-06 {
+    border-top: $section-border;
+    padding: rem(60) 0;
+    &__content-container {
+        flex-direction: column;
+        justify-content: center;
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .text-content {
+            text-align: center;
+            &__title {
+                font-size: rem(36);
+                margin-top: 0;
+                letter-spacing: -0.8px;
+                margin-bottom: rem(30);
+                padding: 0 rem(25);
+                @include media-breakpoint-up(md) {
+                    text-align: left;
+                    padding: 0;
+                    margin-bottom: rem(4);
+                    font-size: rem(32);
+                }
+            }
+            &__subhead {
+                display: block;
+                font-family: $font-subheading;
+                font-size: rem(17);
+                opacity: .7;
+                margin-left: rem(2);
+                margin-bottom: rem(6);
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                @include media-breakpoint-up(md) {
+                    display: inline;
+                    font-size: rem(16);
+                }
+            }
+            @include media-breakpoint-up(md) {
+                text-align: left;
+            }
+        }
+        .cta-container {
+            text-align: center;
+            margin-top: rem(25);
+            @include media-breakpoint-up(md) {
+                margin-top: rem(0);
+            }
+        }
+    }
+    &.has-bottom-border {
+        border-top: 1px solid transparent;
+        border-bottom: $section-border;
+    }
+}

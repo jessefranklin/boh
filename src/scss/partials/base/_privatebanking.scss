@@ -1,0 +1,153 @@
+// ALL Private Bank overrides
+.private-banking {
+
+  // typography
+  .left-navigation {
+      background-color: $sea-green;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-private;
+    font-weight: 500;
+  }
+
+  .subhead {
+    font-family: $font-heading;
+    letter-spacing: -0.2px;
+    font-size: rem(16);
+    @include media-breakpoint-up(md) {
+      font-size: rem(20);
+    }
+  }
+
+  // buttons
+  .btn-primary {
+    background-color: #153a47;
+    border: 1px solid #153a47;
+    &:hover {
+      background-color: $grey;
+      border: 1px solid $grey;    
+    }
+  }
+
+  .btn-secondary {
+    color: #19363c;
+    border: 1px solid #153a47;
+    &:hover {
+      color: $grey;
+      border: 1px solid $grey;    
+    }
+    &.btn-white {
+      color: $white;
+      border: 1px solid $white;     
+    }
+  }
+
+  .btn-tertiary {
+    color: $grey;
+    background-color: $private-grey;
+    border: 1px solid $private-grey;
+    &:hover,
+    &:active {
+      color: $white;
+      border: 1px solid $grey;
+      background-color: $grey;
+    }
+  }
+
+  .caret-link {
+    color: $sea-green !important;
+    &.text-sea-green {
+      &:hover {
+        opacity: 1;
+        color: $grey !important;
+      }
+    }
+  }
+
+  // navigation overrides
+
+  .logo-container {
+    display: none !important;
+  }
+
+  .logo-container-private {
+    @include media-breakpoint-up(xl) {
+      display: block !important;
+    }
+  }
+
+  .mobile-navigation__logo {
+    display: none !important;
+  }
+  .mobile-navigation__logo-private {
+    display: block !important;
+  }
+
+  .mobile-navigation {
+    &.mobile-scrolled {
+      background-color: $sea-green;
+    }
+    &.is-blue {
+      .mobile-navigation__menu .bar {
+        background-color: $sea-green;
+      }
+    }
+    &__container {
+      background-color: $sea-green;
+    }
+  }
+
+  .global-search-container .global-search__wrap-link  {
+    svg {
+      path {
+          @include media-breakpoint-up(xl) {
+              fill: $sea-green !important;
+          }
+      }
+    }
+  }
+
+  .global-search-container {
+    &.is-blue {
+      .global-search__wrap-link {
+        svg {
+          path {
+              fill: $sea-green !important;
+              @include media-breakpoint-up(xl) {
+                  fill: $sea-green !important;
+              }
+          }
+        }
+      }
+    }
+    &.mobile-scrolled {
+      .global-search__wrap-link {
+        svg {
+          path {
+              fill: $white !important;
+              @include media-breakpoint-up(xl) {
+                  fill: $sea-green !important;
+              }
+          }
+        }
+      }
+    }
+  }
+
+  // component overrides
+
+  .bh-10 {
+    .accordion__trigger {
+      font-family: $font-private;
+    }
+  }
+
+  .site-footer {
+    h4, h5 {
+      font-family: $font-heading;
+    }
+  }
+  
+}

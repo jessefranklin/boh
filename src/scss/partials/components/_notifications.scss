@@ -1,0 +1,62 @@
+.notification-container {
+    position: fixed;
+    z-index: 4;
+    transition: top .3s ease-in-out;
+    top: 80px;
+    left: 40px;
+    right: 40px;
+    padding-left: 0px;
+    @include media-breakpoint-up(lg) {
+        padding-left: 300px;
+        top: 20px;
+        left: 20px;
+        right: 100px;
+    }
+    @include media-breakpoint-up(fullscreen) {
+        padding-left: 400px;
+    }
+    &.is-hidden {
+        top: 20px;
+    }
+    @for $i from 1 through 5 {
+        > div.show:nth-child(#{$i}n) {
+            transition-delay: #{$i * .2}s;
+        }
+    }
+}
+
+.notification {
+    border-radius: 8px;
+    margin-bottom: 4px;
+    display: block;
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    max-height: 0px;
+    padding: 0px 40px 0px 30px;
+    overflow: hidden;
+    opacity: 0;
+    transition-delay: 0s;
+    transition: all .6s ease-in-out;
+    p {
+        font-size: 14px;
+    }
+    &.show {
+        opacity: 1;
+        max-height: 300px;
+        transition: all .8s ease-in-out;
+    }
+    &.bg-white  {
+        // background: rgba(255,255,255,1) !important;
+    }
+    button {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 40px;
+        padding: 5px;
+        height: 40px;
+        &:before{
+            font-size: 14px;
+        }
+    }
+}

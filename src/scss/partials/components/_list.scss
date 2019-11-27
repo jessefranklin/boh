@@ -1,0 +1,124 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    padding-top: 120px;
+    h2 {
+        display: block;
+    }
+    time {
+        color: rgba($grey,.8);
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .link-arrow {
+        color: $light-blue;
+        text-decoration: none;
+        padding-right: 0px;
+        &:after {
+            background-position: 2px 5px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__header {
+        text-align: center;
+        .row {
+            padding: 40px 0;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+        .categories {
+            @include media-breakpoint-up(md) {
+                text-align: center;
+            }
+            padding: 40px 0;
+            ul {
+                list-style: none;
+                padding: 0px;
+                li {
+                    display: inline-block;
+                    margin: 0 10px 15px 0;
+                    @include media-breakpoint-up(md) {
+                        margin: 0 10px 0px 0;
+                    }
+                    a {
+                        color: $light-blue;
+                        text-decoration: none;
+                        padding: 5px 0px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-weight: 200;
+            margin: 0 0 40px;
+        }
+        h4 {
+            font-weight: 200;
+            margin: 0px;
+        } 
+    }
+    &__item {
+        padding: 40px 0px;
+        border-top: 1px solid $table-border;
+        @include media-breakpoint-up(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        > div {
+            @include media-breakpoint-up(md) {
+                max-width: 75%;
+            }
+        }
+        h5 {
+            padding: 0px;
+            margin: 0px;
+            font-weight: 200;
+            font-size: 24px;
+            a {
+                font-weight: 400;
+                text-decoration: none;
+            }
+        }
+    }
+    &__footer {
+        background: $table-bg;
+        margin-top: 80px;
+        .container {
+            padding: 80px 0;
+            text-align: center;
+            p {
+                font-size: 16px;
+            }
+            h4 {
+                margin: 0px;
+            }
+            a {
+                color: $light-blue;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                @include media-breakpoint-up(lg) {
+                    &.tel {
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+﻿/*------------------------------------------
+ EditMode
+-------------------------------------------*/
+
+.alert {
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-info {
+    border-color: #bcdff1;
+    color: #31708f;
+    font-family: Verdana;
+    font-size: 1em;
+    font-style: italic;
+    background-color: #d9edf7;
+    box-shadow: 3px 3px 5px #CCC;
+    text-align: center;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}
+
+.alert-error p {
+    text-align: left;
+}
+
+.alert-error .heading {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.alert-error .details {
+    font-size: 0.8em;
+    max-height: 100px;
+    overflow: scroll;
+}
+
+.header.dim {
+    margin: 2% 0;
+    opacity: 0.3;
+}

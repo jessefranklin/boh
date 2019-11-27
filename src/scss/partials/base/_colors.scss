@@ -1,0 +1,64 @@
+/*------------------------------------------
+ Color Vars
+-------------------------------------------*/
+
+$black: #000;
+$body-gray: #4e4c4e;
+$charcoal: #333;
+$white: #fff;
+$light-blue: #1a73e8;
+$medium-blue: #0041aa;
+$dark-blue: #1d2b93;
+$orange: #e96800;
+$cloud: #d8d8d8;
+$light-grey: #fafafa;
+$medium-grey: #eaeaea;
+$dark-grey: #a3a2a4;
+$forest: #007758;
+$table-border: #d3d2d3;
+$table-bg: #f6f7f5;
+$bg-grey: #f3f3f3; // from design, d8d8d8 @ 30% opacity
+$dilute-grey: #716f71;
+$outline-grey: #aaaaaa;
+$sea-green: #003B49;
+$private-grey: #eae8e4;
+
+$grey: #4e4c4e;
+$lightblue: #1a73e8;
+$blue: $dark-blue;
+$med-grey: #f2f2f2;
+
+$error: #de071c;
+
+
+$text-heading: $body-gray;
+$text-body: $body-gray;
+
+
+$app-colors: (
+  white: #ffffff,
+  deep-blue: #1d2b93,
+  shallow-blue: #1a73e8,
+  volcano: #4e4c4e,
+  linen: #fafafa,
+  cloud: #d8d8d8,
+  orange: #e96800,
+  green: #007758,
+  fill-grey: #e9ebee,
+  dark-grey: #1f2326,
+  sea-green: #003B49
+);
+
+@each $value in $app-colors {
+  .text-#{nth($value, 1)} {
+    color: nth($value, 2) !important;
+  }
+
+  .bg-#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+
+  .border-#{nth($value, 1)} {
+    border-color: nth($value, 2) !important;
+  }
+}

@@ -1,0 +1,20 @@
+.hide-mobile {
+    display: inherit;
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.hide-tablet {
+    display: inherit;
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.hide-desktop {
+    display: inherit;
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}

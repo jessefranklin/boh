@@ -1,0 +1,48 @@
+.bh-18 {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    &__wrap {
+
+        .img-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: rem(185);
+            width: 100%;
+            background-size: cover !important;
+            background-position: 0 50% !important;
+            background-repeat: no-repeat !important;
+            border-radius: rem(8);
+            @include media-breakpoint-up(lg) {
+                height: rem(238);
+            }
+        }
+
+        &-content {
+            .title {
+                margin-top: rem(30);
+                margin-bottom: rem(24);
+                @include media-breakpoint-up(md) {
+                    margin-top: rem(50);
+                }
+                @include media-breakpoint-up(md) {
+                    margin-top: rem(60);
+                }
+            }
+            .cta-container {
+                margin-bottom: rem(50);
+                @include media-breakpoint-up(md) {
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: rem(30);
+        padding-bottom: rem(30);      
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: rem(60);
+        padding-bottom: rem(60);      
+    }   
+}

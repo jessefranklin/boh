@@ -1,0 +1,119 @@
+.footer-modal {
+    &.lity.lite-screen {
+        background: rgba(0,0,0,0);
+        pointer-events: none;
+    }
+    .lity-container {
+        max-width: 90%;
+        vertical-align: bottom;
+        margin-bottom: 40px;
+        width: 91%;
+        @include media-breakpoint-up(lg) {
+            max-width: 100%;
+            width: 96%;
+        }
+        @include media-breakpoint-up(xl) {
+            padding-left: 290px;
+        }
+        @include media-breakpoint-up(fullscreen) {
+            padding-left: 390px;
+        }
+    }
+    .lity-content {
+        padding: 0px;
+        // overflow: hidden;
+        box-shadow: none;
+        pointer-events: all;
+        &:after {
+            box-shadow: none;
+        }
+        #gdpr-notification {
+            border-radius: 12px;
+            box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, .15);
+        }
+        .inline-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            > div {
+                text-align: left;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.19;
+            letter-spacing: -0.8px;
+            margin: 0 0 0px;
+        }
+        p {
+            margin: 0px 0;
+            font-size: 14px;
+        }
+        a,
+        button {
+            cursor: pointer;
+        }
+        .app-padding {
+            padding: 25px 30px;
+            @include media-breakpoint-up(md) {
+                padding: 25px 30px;
+            }
+        }
+    }
+}
+
+.standard-modal {
+    &.lity.lite-screen {
+        background: rgba(0,0,0,.2);
+    }
+    .lity-container {
+        max-width: 80%;
+        @include media-breakpoint-up(md) {
+            max-width: 596px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-left: 300px;
+        }
+
+    }
+    .lity-content {
+        padding: 0px;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        h3 {
+            font-size: 32px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.19;
+            letter-spacing: -0.8px;
+            margin: 0 0 30px;
+        }
+        p {
+            font-size: 18px;
+        }
+        a,
+        button {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        a {
+            margin-right: 15px;
+        }
+        .app-padding {
+            padding: 60px 30px;
+            @include media-breakpoint-up(sm) {
+                padding: 100px 60px;
+            }
+            @include media-breakpoint-up(md) {
+                padding: 100px 100px;
+            }
+            
+        }
+    }
+}

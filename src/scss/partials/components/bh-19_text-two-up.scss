@@ -1,0 +1,44 @@
+.bh-19 {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    &__outer {
+        margin-bottom: rem(60);
+        &:first-of-type {
+            @include media-breakpoint-up(md) {
+                border-right: 1px solid $medium-grey;
+            } 
+        }
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(10); 
+        }
+    }
+    &__wrap {
+        &-content {
+            .title {
+                margin-top: 0;
+                margin-bottom: rem(30);
+            }
+            p {
+                font-size: rem(17);
+                line-height: 1.4;
+                opacity: $copy-opacity;
+                margin-bottom: rem(30);
+                @include media-breakpoint-up(md) {
+                    font-size: rem(18);
+                    width: 85%;
+                }
+            }
+        }
+        @include media-breakpoint-up(md) {
+            padding-left: rem(20);
+        }
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: rem(30);
+        padding-bottom: rem(30);      
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: rem(60);
+        padding-bottom: rem(60);      
+    }  
+}

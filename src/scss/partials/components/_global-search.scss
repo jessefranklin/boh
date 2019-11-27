@@ -1,0 +1,86 @@
+
+.global-search-container {
+    position: fixed;
+    top: rem(14);
+    left: rem(10);
+    z-index: map-get($zindex, search);
+    transform: translate3d(0, 0, 0);
+    @include transition(all .3s ease-in-out);
+    @include media-breakpoint-up(md) {
+        top: rem(14);
+        left: rem(30);
+    }
+    @include media-breakpoint-up(xl) {
+        right: 30px;
+        top: 30px;
+        left: auto;
+        position: fixed;
+        @include media-breakpoint-up(xxl) {
+            // margin-right: calc((100vw - 1440px) / 2);
+            z-index: map-get($zindex, search);
+        }
+    }
+
+    .global-search__wrap {
+
+        &-link {
+            display: block;
+            background-color: transparent;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            padding: rem(4);
+            position: relative;
+            transition: all .25s ease-in-out;
+            svg {
+                position: absolute;
+                bottom: rem(9);
+                right: rem(8);
+                height: rem(18);
+                width: rem(19);
+                path {
+                    fill: $white !important;
+                    @include media-breakpoint-up(xl) {
+                        fill: $primary !important;
+                    }
+                }
+            }
+            &:hover {
+                @include media-breakpoint-up(xl) {
+                    box-shadow: 0 5px 10px rgba(194, 138, 138, 0.1), 0 3px 3px rgba(0,0,0,0.15);
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                background-color: rgba(255, 255, 255, 0.77);
+                box-shadow: 0 10px 20px rgba(194, 138, 138, 0.1), 0 6px 6px rgba(0,0,0,0.15);
+            }
+        }
+    }
+    &.is-blue {
+        svg {
+            path {
+                fill: $primary !important;
+            }
+        }
+        &.mobile-scrolled {
+            svg {
+                path {
+                    fill: $white !important;
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                svg {
+                    path {
+                        fill: $primary !important;
+                    }
+                }
+            }
+        }
+    }
+    &.is-hidden {
+        transform: translateY(-120%);
+        @include media-breakpoint-up(xl) {
+            transform: none;
+        }
+    }
+}

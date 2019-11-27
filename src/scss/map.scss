@@ -1,0 +1,71 @@
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  height: 50vh;
+  bottom: 23vh;
+  overflow: hidden;
+  padding: 0px;
+  transition: all .4s ease-in-out .2s;
+  .btn-contract {
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    right: 20px;
+    transition: opacity .6s ease-in-out 0s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.expand {
+    @include media-breakpoint-down(lg) {
+      height: 85vh;
+      bottom: 15vh;
+      .btn-contract {
+        transition: opacity .6s ease-in-out 1s;
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+  .map-container-inside {
+    height: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    .map-container-inside {
+      height: 100vh;
+      right: 0;
+    }
+  }
+  .btn-search {
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    right: 50%;
+    transform: translateX(50%);
+    @include media-breakpoint-up(lg) {
+      top: 60px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .btn-search {
+      transition: opacity .6s ease-in-out 0s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    &.expand {
+      .btn-search {
+        transition: opacity .6s ease-in-out 1s;
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+}

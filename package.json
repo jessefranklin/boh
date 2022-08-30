@@ -18,7 +18,7 @@
     "es6-promise": "^4.2.8",
     "eslint-plugin-prettier": "^3.1.0",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.26",
+    "moment-timezone": "^0.5.35",
     "popper.js": "^1.15.0",
     "postcss-import": "^12.0.1",
     "vue": "^2.6.10",
